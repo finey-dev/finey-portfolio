@@ -15,17 +15,60 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} — Software Developer`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  keywords: [
+    "software developer",
+    "custom software development",
+    "ERP developer",
+    "Odoo developer",
+    "mobile app developer",
+    "Flutter developer",
+    "web developer",
+    "Next.js developer",
+    "business management system",
+    "M-Pesa integration",
+    "payment integration",
+    "KRA eTIMS",
+    "Android app development",
+    "business software",
+    "Finey Otieno Akwoyo",
+    "Finey Akwoyo",
+  ],
+  authors: [{ name: DATA.name, url: DATA.url }],
+  creator: DATA.name,
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+  alternates: {
+    canonical: DATA.url,
+  },
   openGraph: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} — Software Developer`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: DATA.name,
+    images: [
+      {
+        url: `${DATA.url}logo.png`,
+        width: 1024,
+        height: 1024,
+        alt: `${DATA.name} — Software Developer`,
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: `${DATA.name} — Software Developer`,
+    description: DATA.description,
+    images: [`${DATA.url}logo.png`],
+    creator: "@finey_otieno",
   },
   robots: {
     index: true,
@@ -37,10 +80,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  twitter: {
-    title: `${DATA.name}`,
-    card: "summary_large_image",
   },
   verification: {
     google: "",
@@ -57,7 +96,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased max-w-3xl mx-auto py-8 sm:py-14 px-5 sm:px-8",
           fontSans.variable
         )}
       >
