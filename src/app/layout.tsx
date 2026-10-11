@@ -15,7 +15,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: `${DATA.name} — Software Developer`,
+    default: `${DATA.name} | Software Developer`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
   authors: [{ name: DATA.name, url: DATA.url }],
   creator: DATA.name,
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/logo.png",
   },
   alternates: {
     canonical: DATA.url,
   },
   openGraph: {
-    title: `${DATA.name} — Software Developer`,
+    title: `${DATA.name} | Software Developer`,
     description: DATA.description,
     url: DATA.url,
     siteName: DATA.name,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: `${DATA.url}logo.png`,
         width: 1024,
         height: 1024,
-        alt: `${DATA.name} — Software Developer`,
+        alt: `${DATA.name} | Software Developer`,
       },
     ],
     locale: "en_US",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: `${DATA.name} — Software Developer`,
+    title: `${DATA.name} | Software Developer`,
     description: DATA.description,
     images: [`${DATA.url}logo.png`],
     creator: "@finey_otieno",

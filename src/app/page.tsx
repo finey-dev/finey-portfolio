@@ -118,7 +118,7 @@ export default function Page() {
           <div className="mx-auto w-full max-w-3xl space-y-6">
             <div className="gap-6 flex justify-between items-start">
               <div className="flex-col flex flex-1 space-y-4">
-                {/* h1 — critical for SEO */}
+                {/* h1: critical for SEO */}
                 <BlurFade delay={BLUR_FADE_DELAY}>
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     {DATA.hero.headline}
@@ -149,7 +149,7 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <Image
                   src="/logo.png"
-                  alt="Finey Otieno Akwoyo — Software Developer"
+                  alt="Finey Akwoyo, Software Developer"
                   width={112}
                   height={112}
                   className="size-24 sm:size-28 rounded-2xl object-contain border bg-white dark:bg-white/5 p-1 shrink-0"
